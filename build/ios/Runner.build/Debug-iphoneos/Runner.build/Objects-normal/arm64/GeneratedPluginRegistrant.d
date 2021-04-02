@@ -1,0 +1,21 @@
+dependencies: \
+  /Users/yagmyrov/Dev/bookme/ios/Runner/GeneratedPluginRegistrant.m \
+  /Users/yagmyrov/Dev/bookme/ios/Runner/GeneratedPluginRegistrant.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/usr/include/mach-o/dyld.modulemap \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterViewController.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/yagmyrov/Dev/bookme/ios/Flutter/Flutter.framework/Headers/Flutter.h
