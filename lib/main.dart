@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'pages/rooms/yourSelection.dart';
 import 'pages/rooms/reservedSuccess.dart';
+import 'pages/signup/enterCode.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Deo',
-      home: MyHomePage(),
+      home: EnterCode(),
     );
   }
 }
