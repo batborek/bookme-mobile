@@ -1,6 +1,6 @@
 # bookme
 
-A new Flutter project.
+bookme app for ASSIST Code Challenge
 
 ## Getting Started
 
