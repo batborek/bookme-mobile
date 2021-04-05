@@ -1,6 +1,9 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import '../settings/settings.dart';
+import '../trips/trips.dart';
+import './selectDates.dart';
 
 class Rooms extends StatefulWidget {
   @override
@@ -22,36 +25,51 @@ class _RoomsState extends State<Rooms> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.house_outlined),
+                    Icon(Icons.house_outlined, color: Colors.blue),
                     SizedBox(height: 5),
-                    Text('Home'),
-                  ],
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.schedule),
-                    SizedBox(height: 5),
-                    Text('Trips'),
-                  ],
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.settings_outlined,
+                    Text(
+                      'Home',
+                      style: TextStyle(color: Colors.blue),
                     ),
-                    SizedBox(height: 5),
-                    Text('Settings'),
                   ],
+                ),
+              ),
+            ),
+            Expanded(
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Trips()));
+                },
+                child: Container(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.schedule),
+                      SizedBox(height: 5),
+                      Text('Trips'),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Expanded(
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => Settings()));
+                },
+                child: Container(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.settings_outlined,
+                      ),
+                      SizedBox(height: 5),
+                      Text('Settings'),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -81,37 +99,43 @@ class _RoomsState extends State<Rooms> {
               ),
               Expanded(
                 flex: 10,
-                child: Container(
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(20)),
-                  height: 250,
-                  width: 270,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        'assets/img/single.png',
-                        fit: BoxFit.cover,
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: EdgeInsets.only(left: 30, right: 30),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text('Single room'),
-                              Expanded(
-                                  child: SizedBox(
-                                height: 1,
-                              )),
-                              Text('99 RON'),
-                            ],
-                          ),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => SelectDates()));
+                  },
+                  child: Container(
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20)),
+                    height: 250,
+                    width: 270,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/img/single.png',
+                          fit: BoxFit.cover,
                         ),
-                      )
-                    ],
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.only(left: 30, right: 30),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('Single room'),
+                                Expanded(
+                                    child: SizedBox(
+                                  height: 1,
+                                )),
+                                Text('99 RON'),
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -123,37 +147,43 @@ class _RoomsState extends State<Rooms> {
               ),
               Expanded(
                 flex: 10,
-                child: Container(
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(20)),
-                  height: 250,
-                  width: 270,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        'assets/img/kingsize.png',
-                        fit: BoxFit.cover,
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: EdgeInsets.only(left: 30, right: 30),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text('King size'),
-                              Expanded(
-                                  child: SizedBox(
-                                height: 1,
-                              )),
-                              Text('149 RON'),
-                            ],
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => SelectDates()));
+                  },
+                  child: Container(
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20)),
+                    height: 250,
+                    width: 270,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/img/kingsize.png',
+                          fit: BoxFit.cover,
+                        ),
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.only(left: 30, right: 30),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('King size'),
+                                Expanded(
+                                    child: SizedBox(
+                                  height: 1,
+                                )),
+                                Text('149 RON'),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),

@@ -1,4 +1,6 @@
+import 'package:bookme/pages/rooms/rooms.dart';
 import 'package:flutter/material.dart';
+import 'yourSelection.dart';
 
 class SelectDates extends StatefulWidget {
   @override
@@ -15,9 +17,15 @@ class _SelectDatesState extends State<SelectDates> {
           'Select dates of the stay',
           style: TextStyle(color: Colors.black),
         ),
-        leading: Icon(
-          Icons.arrow_back_ios,
-          color: Colors.black,
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => Rooms()));
+          },
+          child: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.black,
+          ),
         ),
         backgroundColor: Color(0xffF5F7FA),
         shadowColor: Colors.transparent,
@@ -80,25 +88,31 @@ class _SelectDatesState extends State<SelectDates> {
                 height: 1,
               ),
             ),
-            Container(
-              alignment: Alignment.center,
-              child: Text(
-                'Continue',
-                style: TextStyle(color: Colors.white, fontSize: 18),
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => YourSelection()));
+              },
+              child: Container(
+                alignment: Alignment.center,
+                child: Text(
+                  'Continue',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 15,
+                      color: Colors.black12,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                  color: Color(0xff0070BA),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                width: double.infinity,
+                height: 60,
               ),
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    blurRadius: 15,
-                    color: Colors.black12,
-                    spreadRadius: 1,
-                  ),
-                ],
-                color: Color(0xff0070BA),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              width: double.infinity,
-              height: 60,
             ),
             Expanded(
               flex: 3,

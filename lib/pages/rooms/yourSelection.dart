@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'reservedSuccess.dart';
 
 class YourSelection extends StatefulWidget {
   @override
@@ -158,25 +159,31 @@ class _YourSelectionState extends State<YourSelection> {
                 height: 1,
               ),
             ),
-            Container(
-              alignment: Alignment.center,
-              child: Text(
-                'Continue',
-                style: TextStyle(color: Colors.white, fontSize: 18),
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => ReservedSuccess()));
+              },
+              child: Container(
+                alignment: Alignment.center,
+                child: Text(
+                  'Continue',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 15,
+                      color: Colors.black12,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                  color: Color(0xff0070BA),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                width: double.infinity,
+                height: 60,
               ),
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    blurRadius: 15,
-                    color: Colors.black12,
-                    spreadRadius: 1,
-                  ),
-                ],
-                color: Color(0xff0070BA),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              width: double.infinity,
-              height: 60,
             ),
             Expanded(
               flex: 3,

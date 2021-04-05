@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'rooms.dart';
 
 class ReservedSuccess extends StatefulWidget {
   @override
@@ -36,25 +37,31 @@ class _ReservedSuccessState extends State<ReservedSuccess> {
                 height: 1,
               ),
             ),
-            Container(
-              alignment: Alignment.center,
-              child: Text(
-                'Back to main menu',
-                style: TextStyle(color: Colors.black54, fontSize: 18),
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => Rooms()));
+              },
+              child: Container(
+                alignment: Alignment.center,
+                child: Text(
+                  'Back to main menu',
+                  style: TextStyle(color: Colors.black54, fontSize: 18),
+                ),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 15,
+                      color: Colors.black12,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                width: double.infinity,
+                height: 60,
               ),
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    blurRadius: 15,
-                    color: Colors.black12,
-                    spreadRadius: 1,
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              width: double.infinity,
-              height: 60,
             ),
             Expanded(
               flex: 2,
