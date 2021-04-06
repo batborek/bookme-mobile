@@ -89,6 +89,8 @@ class _TripsState extends State<Trips> {
         padding: EdgeInsets.only(
           top: 50,
           bottom: 20,
+          left: 40,
+          right: 40,
         ),
         alignment: Alignment.center,
         child: Column(
@@ -121,13 +123,12 @@ class _TripsState extends State<Trips> {
                       ),
                     ],
                   ),
-                  height: 250,
-                  width: 270,
+                  width: double.infinity,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'assets/img/single.png',
+                        'assets/img/fv3.png',
                         fit: BoxFit.cover,
                       ),
                       Expanded(
@@ -155,7 +156,13 @@ class _TripsState extends State<Trips> {
               ),
             ),
             Expanded(
-              flex: 10,
+              flex: 2,
+              child: SizedBox(
+                height: 1,
+              ),
+            ),
+            Expanded(
+              flex: 6,
               child: SizedBox(
                 height: 1,
               ),

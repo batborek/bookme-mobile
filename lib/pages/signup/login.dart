@@ -29,6 +29,11 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              Expanded(
+                child: SizedBox(
+                  height: 1,
+                ),
+              ),
               Image.asset(
                 'assets/img/logo.png',
                 fit: BoxFit.cover,

@@ -109,6 +109,8 @@ class _TripInfoState extends State<TripInfo> {
         padding: EdgeInsets.only(
           top: 50,
           bottom: 1,
+          left: 50,
+          right: 50,
         ),
         alignment: Alignment.center,
         child: Column(
@@ -132,10 +134,10 @@ class _TripInfoState extends State<TripInfo> {
                     ),
                   ],
                 ),
-                width: 270,
+                width: double.infinity,
                 height: 130,
                 child: Image.asset(
-                  'assets/img/single.png',
+                  'assets/img/wfh.png',
                   fit: BoxFit.cover,
                 ),
               ),
@@ -147,14 +149,13 @@ class _TripInfoState extends State<TripInfo> {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(right: 40, left: 40),
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.white,
                 ),
                 height: 200,
-                width: 270,
+                width: double.infinity,
                 child: Container(
                   padding: EdgeInsets.only(right: 30, left: 30),
                   child: Column(
@@ -238,7 +239,7 @@ class _TripInfoState extends State<TripInfo> {
                             color: Color(0xff0070BA),
                             borderRadius: BorderRadius.circular(15),
                           ),
-                          width: 150,
+                          width: double.infinity,
                           height: 40,
                         ),
                       ),
@@ -270,7 +271,7 @@ class _TripInfoState extends State<TripInfo> {
                             color: Color(0xffF47090),
                             borderRadius: BorderRadius.circular(15),
                           ),
-                          width: 150,
+                          width: double.infinity,
                           height: 40,
                         ),
                       ),

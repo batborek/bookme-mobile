@@ -36,10 +36,14 @@ class _PersonalinfoState extends State<Personalinfo> {
         child: Column(
           children: [
             Container(
+              child: Image.asset(
+                'assets/img/prfl.png',
+                fit: BoxFit.fill,
+              ),
               decoration:
                   BoxDecoration(color: Colors.white, shape: BoxShape.circle),
-              height: 150,
-              width: 270,
+              height: 160,
+              width: 160,
             ),
             Expanded(
               flex: 2,

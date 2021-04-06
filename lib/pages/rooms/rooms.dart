@@ -83,7 +83,9 @@ class _RoomsState extends State<Rooms> {
       ),
       body: Container(
           padding: EdgeInsets.only(
-            top: 50,
+            right: 30,
+            left: 30,
+            top: 60,
             bottom: 20,
           ),
           alignment: Alignment.center,
@@ -110,7 +112,7 @@ class _RoomsState extends State<Rooms> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20)),
                     height: 250,
-                    width: 270,
+                    width: double.infinity,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -158,7 +160,7 @@ class _RoomsState extends State<Rooms> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20)),
                     height: 250,
-                    width: 270,
+                    width: double.infinity,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

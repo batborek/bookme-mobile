@@ -28,7 +28,13 @@ class _YourSelectionState extends State<YourSelection> {
         alignment: Alignment.center,
         child: Column(
           children: [
+            Expanded(
+              child: SizedBox(
+                height: 1,
+              ),
+            ),
             Container(
+              padding: EdgeInsets.only(bottom: 10),
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -41,14 +47,13 @@ class _YourSelectionState extends State<YourSelection> {
                   ),
                 ],
               ),
-              height: 250,
-              width: 300,
+              height: 300,
+              width: double.infinity,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/img/single.png',
-                    fit: BoxFit.cover,
+                    'assets/img/fv.png',
                   ),
                   Expanded(
                     child: Container(

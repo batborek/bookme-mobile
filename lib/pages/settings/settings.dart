@@ -92,18 +92,23 @@ class _SettingsState extends State<Settings> {
       body: Container(
         padding: EdgeInsets.only(
           top: 50,
-          bottom: 10,
-          left: 20,
-          right: 20,
+          bottom: 20,
+          left: 50,
+          right: 50,
         ),
         alignment: Alignment.center,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Expanded(
+              child: SizedBox(
+                height: 1,
+              ),
+            ),
             Container(
               alignment: Alignment.center,
               child: Container(
-                width: 310,
+                width: double.infinity,
                 height: 90,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
@@ -115,6 +120,10 @@ class _SettingsState extends State<Settings> {
                     Container(
                       width: 60,
                       height: 60,
+                      child: Image.asset(
+                        'assets/img/prfl.png',
+                        fit: BoxFit.cover,
+                      ),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: Colors.grey,
@@ -142,7 +151,7 @@ class _SettingsState extends State<Settings> {
               ),
             ),
             Expanded(
-              flex: 1,
+              flex: 2,
               child: SizedBox(
                 height: 1,
               ),
@@ -153,7 +162,7 @@ class _SettingsState extends State<Settings> {
                     MaterialPageRoute(builder: (context) => Personalinfo()));
               },
               child: Container(
-                width: 310,
+                width: double.infinity,
                 height: 50,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -193,7 +202,7 @@ class _SettingsState extends State<Settings> {
                     .push(MaterialPageRoute(builder: (context) => Rules()));
               },
               child: Container(
-                width: 310,
+                width: double.infinity,
                 height: 50,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -232,7 +241,7 @@ class _SettingsState extends State<Settings> {
                     .push(MaterialPageRoute(builder: (context) => Faq()));
               },
               child: Container(
-                width: 310,
+                width: double.infinity,
                 height: 50,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -272,7 +281,7 @@ class _SettingsState extends State<Settings> {
                     MaterialPageRoute(builder: (context) => PaymentMethods()));
               },
               child: Container(
-                width: 310,
+                width: double.infinity,
                 height: 50,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -312,7 +321,7 @@ class _SettingsState extends State<Settings> {
                     .push(MaterialPageRoute(builder: (context) => Privacy()));
               },
               child: Container(
-                width: 310,
+                width: double.infinity,
                 height: 50,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -352,7 +361,7 @@ class _SettingsState extends State<Settings> {
                     .push(MaterialPageRoute(builder: (context) => Contact()));
               },
               child: Container(
-                width: 310,
+                width: double.infinity,
                 height: 50,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -392,7 +401,7 @@ class _SettingsState extends State<Settings> {
                     MaterialPageRoute(builder: (context) => ConfirmLogout()));
               },
               child: Container(
-                width: 310,
+                width: double.infinity,
                 height: 50,
                 decoration: BoxDecoration(
                   color: Color(0xffF47090),

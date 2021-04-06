@@ -28,7 +28,7 @@ class _ChangeSuccessState extends State<ChangeSuccess> {
               ),
             ),
             Image.asset(
-              'assets/img/single.png',
+              'assets/img/hp.png',
               fit: BoxFit.cover,
             ),
             Expanded(

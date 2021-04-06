@@ -28,7 +28,7 @@ class _ReservedSuccessState extends State<ReservedSuccess> {
               ),
             ),
             Image.asset(
-              'assets/img/single.png',
+              'assets/img/hf.png',
               fit: BoxFit.cover,
             ),
             Expanded(

@@ -39,10 +39,9 @@ class _SelectNewDatesState extends State<SelectNewDates> {
             Container(
               decoration: BoxDecoration(
                   color: Colors.white, borderRadius: BorderRadius.circular(20)),
-              height: 150,
-              width: 270,
+              width: double.infinity,
               child: Image.asset(
-                'assets/img/single.png',
+                'assets/img/fv2.png',
                 fit: BoxFit.fill,
               ),
             ),
