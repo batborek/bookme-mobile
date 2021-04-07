@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">395502476330-09g2bl4ptmecgskvj734pgc5jma6bd8t.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">395502476330</string>
+    <string name="google_api_key" translatable="false">AIzaSyAi4lkF-v5VxttVDvIDV3wtLz_bz_K8o-s</string>
+    <string name="google_app_id" translatable="false">1:395502476330:android:e752d9d977a6d6e909f753</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAi4lkF-v5VxttVDvIDV3wtLz_bz_K8o-s</string>
+    <string name="google_storage_bucket" translatable="false">bookme-d947e.appspot.com</string>
+    <string name="project_id" translatable="false">bookme-d947e</string>
+</resources>
